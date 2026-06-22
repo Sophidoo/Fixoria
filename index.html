@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixoria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>  
+    <nav>
+        <div class="logo">
+            <p class="logo-icon">F</p>
+            <p class="logo-text">Fixoria</p>
+        </div>
+        
+        <div class="nav-links" id="navLinks">
+            <a href="#">Home</a>
+            <a href="" class="courses">
+                Courses 
+                <span class="material-symbols-outlined">
+                chevron_left
+                </span>
+            </a>
+            <a href="">Popular</a>
+            <a href="">Testimonial</a>
+            <a href="">Contact</a>
+        </div>
+
+        <div class="burger-container">
+            <button>Book A Call 
+                <span class="material-symbols-outlined">
+                arrow_outward
+                </span>
+            </button>
+            <div class="menu" onclick="showMenu()" id="menu">
+                <span class="material-symbols-outlined" >
+                    menu
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="students-wrapper">
+            <div class="image-wrapper">
+                <img src="https://t4.ftcdn.net/jpg/05/23/62/91/360_F_523629123_RpAModBJXgCTPfilfYaCIbPaalFIjbvv.jpg" alt="">
+                <img src="https://images.pexels.com/photos/14650234/pexels-photo-14650234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <img src="https://i.pinimg.com/736x/0f/9a/6f/0f9a6f86e2806b20e766fd3ae2897257.jpg" alt="">
+                <img src="https://startupstockphotos.com/wp-content/uploads/2022/09/ssp157-2000x3000.jpg" alt="">
+                <img src="https://img.freepik.com/free-photo/attractive-blond-male-dressed-suit-dark-grey-background_613910-14130.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+            </div>
+
+            <div class="text-wrapper">
+                <p>30k+</p>
+                <small>Students joined</small>
+            </div>
+        </div>
+
+        <h1>Advance your tech skills for a future-ready IT career.</h1>
+        <p class="hero-desc">With a vision to turn manpower into assets, Fixoria is ready to enhance your learning with skilled mentors and updated curriculum, Join a course tutor today!</p>
+
+        <button class="hero-button">
+            Explore Courses
+            <span class="material-symbols-outlined">
+                arrow_outward
+            </span>
+        </button>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ucYlHMPMupI?si=Aeid8zVEOAEtmkkx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+
+    <script>
+        const menu = document.getElementById("menu")
+        const links = document.getElementById("navLinks")
+
+        function showMenu(){
+            if(links.style.display == "none"){
+                links.style.display = "flex"
+            }else{
+                links.style.display = "none"
+            }
+        }
+    </script>
+
+
+</body>
+</html>
